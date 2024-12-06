@@ -1,0 +1,9 @@
+{
+  "values": [
+    "milkshakemod:lunatean_ore",
+    "milkshakemod:deepslate_lunatean_ore",
+    "milkshakemod:nether_lunatean_ore",
+    "milkshakemod:end_stone_lunatean_ore",
+    "#forge:ores"
+  ]
+}

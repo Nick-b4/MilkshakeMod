@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "milkshakemod:block/lunatean_block"
+  }
+}

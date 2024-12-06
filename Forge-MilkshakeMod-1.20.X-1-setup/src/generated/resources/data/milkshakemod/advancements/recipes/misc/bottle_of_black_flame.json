@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_eyes_of_friend": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "milkshakemod:eyes_of_a_friend"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "milkshakemod:bottle_of_black_flame"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_eyes_of_friend",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "milkshakemod:bottle_of_black_flame"
+    ]
+  },
+  "sends_telemetry_event": false
+}

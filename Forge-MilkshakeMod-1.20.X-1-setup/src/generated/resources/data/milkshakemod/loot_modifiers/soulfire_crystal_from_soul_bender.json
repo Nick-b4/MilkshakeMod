@@ -1,0 +1,10 @@
+{
+  "type": "milkshakemod:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "milkshakemod:entities/soul_bender"
+    }
+  ],
+  "item": "milkshakemod:soulfire_crystal"
+}

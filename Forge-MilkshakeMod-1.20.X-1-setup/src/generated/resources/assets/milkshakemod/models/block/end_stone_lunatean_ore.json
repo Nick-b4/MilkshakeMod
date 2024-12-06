@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "milkshakemod:block/end_stone_lunatean_ore"
+  }
+}

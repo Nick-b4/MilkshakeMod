@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:soul_sand_valley",
+  "features": "milkshakemod:nether_lunatean_ore_placed",
+  "step": "underground_ores"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "lunatean",
+  "ingredient": {
+    "item": "milkshakemod:raw_lunatean"
+  },
+  "result": "milkshakemod:lunatean"
+}

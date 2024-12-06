@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "milkshakemod:block/lunatean_door_bottom",
+    "top": "milkshakemod:block/lunatean_door_top"
+  }
+}

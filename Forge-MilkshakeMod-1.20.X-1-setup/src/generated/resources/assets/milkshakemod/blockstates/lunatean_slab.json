@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "milkshakemod:block/lunatean_slab"
+    },
+    "type=double": {
+      "model": "milkshakemod:block/lunatean_block"
+    },
+    "type=top": {
+      "model": "milkshakemod:block/lunatean_slab_top"
+    }
+  }
+}

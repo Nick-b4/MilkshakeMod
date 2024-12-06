@@ -1,0 +1,48 @@
+
+{
+    "metal_detector_found_ore": {
+      "subtitles": "sounds.milkshakemod.metal_detector_found_ore",
+      "sounds": [
+        "milkshakemod:metal_detector_found_ore"
+      ]
+    },
+    "sound_block_break": {
+      "subtitle": "sounds.milkshakemod.sound_block_break",
+      "sounds": [
+        "milkshakemod:sound_block_break"
+      ]
+    },
+    "sound_block_step": {
+      "subtitle": "sounds.milkshakemod.sound_block_step",
+      "sounds": [
+        "milkshakemod:sound_block_step"
+      ]
+    },
+    "sound_block_place": {
+      "subtitle": "sounds.milkshakemod.sound_block_place",
+      "sounds": [
+        "milkshakemod:sound_block_place"
+      ]
+    },
+    "sound_block_hit": {
+      "subtitle": "sounds.milkshakemod.sound_block_hit",
+      "sounds": [
+        "milkshakemod:sound_block_hit"
+      ]
+    },
+    "sound_block_fall": {
+      "subtitle": "sounds.milkshakemod.sound_block_fall",
+      "sounds": [
+        "milkshakemod:sound_block_fall"
+      ]
+    },
+    "bar_brawl": {
+      "sounds": [
+        {
+          "name": "milkshakemod:bar_brawl",
+          "stream": true
+        }
+      ]
+    }
+  }
+  

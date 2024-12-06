@@ -1,0 +1,17 @@
+{
+  "values": [
+    "milkshakemod:lunatean_ore",
+    "milkshakemod:deepslate_lunatean_ore",
+    "milkshakemod:nether_lunatean_ore",
+    "milkshakemod:end_stone_lunatean_ore",
+    "milkshakemod:raw_lunatean_block",
+    "milkshakemod:lunatean_block",
+    "milkshakemod:lunatean_stairs",
+    "milkshakemod:lunatean_slab",
+    "milkshakemod:lunatean_wall",
+    "milkshakemod:chalice_of_deception",
+    "milkshakemod:chalice_of_eternal_flame",
+    "milkshakemod:chalice_of_nature",
+    "milkshakemod:chalice_of_void"
+  ]
+}

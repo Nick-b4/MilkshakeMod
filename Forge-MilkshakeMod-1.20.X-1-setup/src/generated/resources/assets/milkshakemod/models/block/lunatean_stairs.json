@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "milkshakemod:block/lunatean_block",
+    "side": "milkshakemod:block/lunatean_block",
+    "top": "milkshakemod:block/lunatean_block"
+  }
+}

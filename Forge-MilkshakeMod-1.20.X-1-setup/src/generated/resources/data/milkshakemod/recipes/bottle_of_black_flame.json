@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:dragon_breath"
+    },
+    {
+      "item": "milkshakemod:eyes_of_a_friend"
+    }
+  ],
+  "result": {
+    "item": "milkshakemod:bottle_of_black_flame"
+  }
+}

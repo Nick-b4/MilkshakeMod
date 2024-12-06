@@ -1,0 +1,13 @@
+// 1.20.1	2024-12-04T18:59:48.2052972	Tags for minecraft:block mod id milkshakemod
+0cd081f0cf2287ae6107622d1ed030d750a35a71 data/milkshakemod/tags/blocks/metal_detector_valuables.json
+c0a1cec21671e192625faf045165d876b2adffcb data/milkshakemod/tags/blocks/needs_lunatean_tool.json
+8648bbe742ece79ae9cf7f85b842514a159949ee data/minecraft/tags/blocks/buttons.json
+1f048013f5699aff2f0f5be8692a7e0074248c5e data/minecraft/tags/blocks/fences.json
+075eaabdd124fd03efae140ee47d729fdc958436 data/minecraft/tags/blocks/fence_gates.json
+2652a85970e71dc13f46aac6b9c590069194fb7c data/minecraft/tags/blocks/logs.json
+6f93309307603916750d961c72b83834a8540c0c data/minecraft/tags/blocks/mineable/pickaxe.json
+d96ab38df5eba0746b12f3fdd13e11a0994f36fc data/minecraft/tags/blocks/planks.json
+4d153d7a34f6c0f5642dcb9460d4915d315c4a92 data/minecraft/tags/blocks/pressure_plates.json
+67518360ebb2d9b3cdd44a4e07f438caf536fdcf data/minecraft/tags/blocks/slabs.json
+a37b1ece02ff2e577616aadfd863bed27ad816bf data/minecraft/tags/blocks/stairs.json
+17f2e5a3bd4315519c0c320fce866b8c2d9e29d3 data/minecraft/tags/blocks/walls.json
