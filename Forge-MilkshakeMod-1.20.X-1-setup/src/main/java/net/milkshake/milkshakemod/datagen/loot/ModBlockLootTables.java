@@ -43,12 +43,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.NETHER_LUNATEAN_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.NETHER_LUNATEAN_ORE.get(), ModItems.RAW_LUNATEAN.get()));
         this.add(ModBlocks.END_STONE_LUNATEAN_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_LUNATEAN_ORE.get(), ModItems.RAW_LUNATEAN.get()));
+                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_LUNATEAN_ORE.get(), ModItems.RAW_LUNATEAN.get()));        
 
         this.dropSelf(ModBlocks.LUNATEAN_LOG.get());
-        this.dropSelf(ModBlocks.LUNATEAN_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_LUNATEAN_LOG.get());
-        this.dropSelf(ModBlocks.STRIPPED_LUNATEAN_WOOD.get());
         this.dropSelf(ModBlocks.LUNATEAN_PLANKS.get());
         this.dropSelf(ModBlocks.LUNATEAN_STAIRS.get());
         this.dropSelf(ModBlocks.LUNATEAN_PRESSURE_PLATE.get());
@@ -62,6 +60,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CHALICE_OF_NATURE.get());
         this.dropSelf(ModBlocks.CHALICE_OF_VOID.get());
         this.dropSelf(ModBlocks.LUNATEAN_SAPLING.get());
+        this.dropSelf(ModBlocks.ANCIENT_WOOD_LOG.get());
         this.add(ModBlocks.LUNATEAN_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.LUNATEAN_SLAB.get()));
         this.add(ModBlocks.LUNATEAN_DOOR.get(),

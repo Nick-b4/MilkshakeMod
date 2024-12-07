@@ -47,12 +47,13 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         evenSimplerBlockItem(ModBlocks.LUNATEAN_LOG);
         evenSimplerBlockItem(ModBlocks.STRIPPED_LUNATEAN_LOG);
-        evenSimplerBlockItem(ModBlocks.LUNATEAN_WOOD);
-        evenSimplerBlockItem(ModBlocks.STRIPPED_LUNATEAN_WOOD);
+        evenSimplerBlockItem(ModBlocks.ANCIENT_WOOD_LOG);
+
 
         simpleItem(ModItems.METAL_DETECTOR);
         simpleItem(ModItems.LUNATEANOAL);
         simpleItem(ModItems.MILKBERRY);
+        
 
         withExistingParent(ForgeRegistries.BLOCKS.getKey(ModBlocks.LUNATEAN_DOOR.get()).getPath(),
                 new ResourceLocation("item/generated"))
@@ -75,6 +76,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.LUNATEAN_AXE);
         handheldItem(ModItems.LUNATEAN_SHOVEL);
         handheldItem(ModItems.LUNATEAN_HOE);
+        handheldItem(ModItems.LUNATEAN_PAXEL);
 
         trimmedArmorItem(ModItems.LUNATEAN_HELMET);
         trimmedArmorItem(ModItems.LUNATEAN_CHESTPLATE);
@@ -91,6 +93,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.EMBER_OF_ETERNITY);
         simpleItem(ModItems.STONE_TABLET);
         saplingItem(ModBlocks.LUNATEAN_SAPLING);
+        simpleItem(ModItems.ENDER_HEART);
+        simpleItem(ModItems.ECHO_OF_OBLIVION);
+        simpleItem(ModItems.FRAGMENT_OF_THE_VOID);
+        simpleItem(ModItems.ESSENCE_OF_THE_BLOOM);
+        simpleItem(ModItems.ROOT_OF_RENEWAL);
+        simpleItem(ModItems.LUNATEAN_PAXEL);
+        
     }
 
     

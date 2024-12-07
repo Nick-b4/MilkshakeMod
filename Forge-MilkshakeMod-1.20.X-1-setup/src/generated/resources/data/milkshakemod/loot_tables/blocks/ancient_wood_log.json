@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "milkshakemod:lunatean_wood"
+          "name": "milkshakemod:ancient_wood_log"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "milkshakemod:blocks/lunatean_wood"
+  "random_sequence": "milkshakemod:blocks/ancient_wood_log"
 }

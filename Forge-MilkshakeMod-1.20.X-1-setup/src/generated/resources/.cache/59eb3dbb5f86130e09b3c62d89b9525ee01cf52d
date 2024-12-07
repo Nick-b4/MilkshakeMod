@@ -1,4 +1,5 @@
-// 1.20.1	2024-12-05T16:36:43.889452	Loot Tables
+// 1.20.1	2024-12-06T22:52:44.9074792	Loot Tables
+3bd345351f574a660c610769cc018a47a0df0a64 data/milkshakemod/loot_tables/blocks/ancient_wood_log.json
 d2c5bbbf495b945262dd870351085bc8e14ebbd9 data/milkshakemod/loot_tables/blocks/chalice_of_deception.json
 1c59a2f2dd40e89b1bbf5ae23c090567fb21dce5 data/milkshakemod/loot_tables/blocks/chalice_of_eternal_flame.json
 0e8c1aedbddaaa1faa0d81aab7c4d63c5ad1c88e data/milkshakemod/loot_tables/blocks/chalice_of_nature.json
@@ -21,9 +22,7 @@ d30cfd8ba52e63ae77bb0acf205826cc972e617d data/milkshakemod/loot_tables/blocks/lu
 aba26d44ee27c6cad1bf3d3a0faffe7c1a0b3112 data/milkshakemod/loot_tables/blocks/lunatean_stairs.json
 31854b15c80ebac4e6c80086ddf0ae1c682645a7 data/milkshakemod/loot_tables/blocks/lunatean_trapdoor.json
 c385e0a642103bc55637bb47c2206a446e2bbb75 data/milkshakemod/loot_tables/blocks/lunatean_wall.json
-54222aedcfc2be58406520069e45910bd6868008 data/milkshakemod/loot_tables/blocks/lunatean_wood.json
 51420da460496b424d409e36b0eb77f9459b6e4a data/milkshakemod/loot_tables/blocks/nether_lunatean_ore.json
 917ba4bb261496a1c497aec051a723998b2bfeed data/milkshakemod/loot_tables/blocks/raw_lunatean_block.json
 360a3c2d49390c24417c3950a3d709bbf89d5539 data/milkshakemod/loot_tables/blocks/sound_block.json
 214b11bcf65ff3fd6721a018391f7da3733de6d1 data/milkshakemod/loot_tables/blocks/stripped_lunatean_log.json
-0388aa7ec1d8d50cdc49a417070c1ef8400f8632 data/milkshakemod/loot_tables/blocks/stripped_lunatean_wood.json

@@ -92,6 +92,20 @@ public static final RegistryObject<Item> RAW_LUNATEAN = ITEMS.register("raw_luna
     public static final RegistryObject<Item> STONE_TABLET = ITEMS.register("stone_tablet",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> ENDER_HEART = ITEMS.register("ender_heart",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ECHO_OF_OBLIVION = ITEMS.register("echo_of_oblivion",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FRAGMENT_OF_THE_VOID = ITEMS.register("fragment_of_the_void",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ESSENCE_OF_THE_BLOOM = ITEMS.register("essence_of_the_bloom",
+            () -> new Item(new Item.Properties()));    
+            public static final RegistryObject<Item> ROOT_OF_RENEWAL = ITEMS.register("root_of_renewal",
+            () -> new Item(new Item.Properties()));
+    
+    public static final RegistryObject<Item> LUNATEAN_PAXEL = ITEMS.register("lunatean_paxel",
+        () -> new net.milkshake.milkshakemod.item.custom.LunateanPaxel(ModToolTiers.LUNATEAN, 5.0f));
+    
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     

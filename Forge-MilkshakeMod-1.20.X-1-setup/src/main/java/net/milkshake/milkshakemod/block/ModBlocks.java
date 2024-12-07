@@ -41,8 +41,6 @@ import net.milkshake.milkshakemod.block.custom.ChaliceOfVoidBlock;
 import net.milkshake.milkshakemod.block.custom.LunateanCropBlock;
 import net.milkshake.milkshakemod.sound.ModSounds;
 import net.milkshake.milkshakemod.worldgen.tree.LunateanTreeGrower;
-import net.minecraft.world.level.block.BaseFireBlock;
-import net.minecraft.world.item.CreativeModeTab;
 
 
 public class ModBlocks {
@@ -81,9 +79,7 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_LUNATEAN_LOG = registerBlock("stripped_lunatean_log",    
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
-    public static final RegistryObject<Block> STRIPPED_LUNATEAN_WOOD = registerBlock("stripped_lunatean_wood",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
-       public static final RegistryObject<Block> LUNATEAN_WOOD = registerBlock("lunatean_wood",
+       public static final RegistryObject<Block> ANCIENT_WOOD_LOG = registerBlock("ancient_wood_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
             public static final RegistryObject<Block> LUNATEAN_PLANKS = registerBlock("lunatean_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {

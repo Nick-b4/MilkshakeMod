@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column_horizontal",
-  "textures": {
-    "end": "milkshakemod:block/stripped_lunatean_wood_top",
-    "side": "milkshakemod:block/stripped_lunatean_wood"
-  }
-}

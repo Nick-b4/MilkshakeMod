@@ -35,9 +35,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.MILKBERRY.get());
                         pOutput.accept(ModItems.LUNATEANOAL.get());
                         pOutput.accept(ModBlocks.LUNATEAN_LOG.get());
-                        pOutput.accept(ModBlocks.LUNATEAN_WOOD.get());
+                        pOutput.accept(ModBlocks.ANCIENT_WOOD_LOG.get());
                         pOutput.accept(ModBlocks.STRIPPED_LUNATEAN_LOG.get());
-                        pOutput.accept(ModBlocks.STRIPPED_LUNATEAN_WOOD.get());
                         pOutput.accept(ModBlocks.LUNATEAN_PLANKS.get());
                         pOutput.accept(ModBlocks.LUNATEAN_LEAVES.get());
                         pOutput.accept(ModBlocks.LUNATEAN_DOOR.get());
@@ -62,6 +61,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.LUNATEAN_SEEDS.get());
                         pOutput.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
                         pOutput.accept(ModItems.ITACHI_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.ENDER_HEART.get());
+                        pOutput.accept(ModItems.ECHO_OF_OBLIVION.get());
+                        pOutput.accept(ModItems.FRAGMENT_OF_THE_VOID.get());
+                        pOutput.accept(ModItems.ESSENCE_OF_THE_BLOOM.get());
+                        pOutput.accept(ModItems.ROOT_OF_RENEWAL.get());
                         pOutput.accept(ModBlocks.CHALICE_OF_DECEPTION.get());
                         pOutput.accept(ModBlocks.CHALICE_OF_ETERNAL_FLAME.get());
                         pOutput.accept(ModItems.BOTTLE_OF_BLACK_FLAME.get());
@@ -73,6 +77,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.EMBER_OF_ETERNITY.get());
                         pOutput.accept(ModItems.STONE_TABLET.get());
                         pOutput.accept(ModBlocks.LUNATEAN_SAPLING.get());
+                        pOutput.accept(ModItems.LUNATEAN_PAXEL.get());
                     })
                     .build());
 

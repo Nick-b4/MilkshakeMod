@@ -1,5 +1,6 @@
 package net.milkshake.milkshakemod.entity.custom;
 
+import net.milkshake.milkshakemod.item.ModItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
@@ -83,6 +84,15 @@ public class VoidMageEntity extends Monster {
                 .add(Attributes.ATTACK_DAMAGE, 15.0D)
                 .add(Attributes.KNOCKBACK_RESISTANCE, 0.6D)
                 .add(Attributes.ATTACK_KNOCKBACK, 1.0D);
+    }
+
+     @Override
+    public void die(DamageSource damageSource) {
+        super.die(damageSource);
+        
+        if (!this.level().isClientSide && random.nextFloat() <= 1.0f) { // 0.4% drop chance
+            this.spawnAtLocation(ModItems.ECHO_OF_OBLIVION.get());
+        }
     }
 
     @Nullable

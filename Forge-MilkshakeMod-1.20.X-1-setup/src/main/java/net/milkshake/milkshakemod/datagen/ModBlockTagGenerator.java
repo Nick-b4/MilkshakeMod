@@ -44,9 +44,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.LOGS)
             .add(ModBlocks.LUNATEAN_LOG.get())
-            .add(ModBlocks.LUNATEAN_WOOD.get())
             .add(ModBlocks.STRIPPED_LUNATEAN_LOG.get())
-            .add(ModBlocks.STRIPPED_LUNATEAN_WOOD.get());
+            .add(ModBlocks.ANCIENT_WOOD_LOG.get());
 
         this.tag(BlockTags.PLANKS)
             .add(ModBlocks.LUNATEAN_PLANKS.get());
@@ -56,8 +55,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
             .add(ModBlocks.DEEPSLATE_LUNATEAN_ORE.get())
             .add(ModBlocks.NETHER_LUNATEAN_ORE.get())
             .add(ModBlocks.END_STONE_LUNATEAN_ORE.get())
-            .add(ModBlocks.STRIPPED_LUNATEAN_LOG.get())
-            .add(ModBlocks.STRIPPED_LUNATEAN_WOOD.get())
             .add(ModBlocks.LUNATEAN_LOG.get())
             .add(ModBlocks.LUNATEAN_PLANKS.get());
 

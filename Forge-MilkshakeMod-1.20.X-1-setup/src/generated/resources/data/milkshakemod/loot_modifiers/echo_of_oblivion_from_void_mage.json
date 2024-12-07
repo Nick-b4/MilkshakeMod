@@ -3,8 +3,8 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "minecraft:entities/blaze"
+      "loot_table_id": "milkshakemod:entities/void_mage"
     }
   ],
-  "item": "milkshakemod:lunatean"
+  "item": "milkshakemod:echo_of_oblivion"
 }

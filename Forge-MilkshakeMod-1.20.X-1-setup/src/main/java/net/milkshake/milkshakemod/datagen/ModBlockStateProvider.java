@@ -74,9 +74,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
               makeLunateanCrop((CropBlock) ModBlocks.LUNATEAN_CROP.get(), "lunatean_stage", "lunatean_stage");
 
         logBlock(((RotatedPillarBlock) ModBlocks.LUNATEAN_LOG.get()));
-        logBlock(((RotatedPillarBlock) ModBlocks.LUNATEAN_WOOD.get()));
+       
         logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_LUNATEAN_LOG.get()));
-        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_LUNATEAN_WOOD.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.ANCIENT_WOOD_LOG.get()));
 
         blockWithItem(ModBlocks.LUNATEAN_PLANKS);
         leavesBlock(ModBlocks.LUNATEAN_LEAVES);

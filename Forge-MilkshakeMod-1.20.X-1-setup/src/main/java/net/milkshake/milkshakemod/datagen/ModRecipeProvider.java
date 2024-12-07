@@ -52,6 +52,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.EYES_OF_A_FRIEND.get())
                 .unlockedBy("has_eyes_of_friend", has(ModItems.EYES_OF_A_FRIEND.get()))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.LUNATEAN_PAXEL.get())
+            .pattern("PAS")
+            .pattern(" R ")
+            .pattern(" R ")
+            .define('P', ModItems.LUNATEAN_PICKAXE.get())
+            .define('A', ModItems.LUNATEAN_AXE.get())
+            .define('S', ModItems.LUNATEAN_SHOVEL.get())
+            .define('R', Items.STICK)
+            .unlockedBy(getHasName(ModItems.LUNATEAN_PICKAXE.get()), has(ModItems.LUNATEAN_PICKAXE.get()))
+            .unlockedBy(getHasName(ModItems.LUNATEAN_AXE.get()), has(ModItems.LUNATEAN_AXE.get()))
+            .unlockedBy(getHasName(ModItems.LUNATEAN_SHOVEL.get()), has(ModItems.LUNATEAN_SHOVEL.get()))
+            .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
+            .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ANCIENT_WOOD_LOG.get())
+            .pattern("LLL")
+            .pattern("LSL")
+            .pattern("LLL")
+            .define('L', ModBlocks.LUNATEAN_LOG.get())
+            .define('S', Items.NETHER_STAR)
+            .unlockedBy(getHasName(Items.NETHER_STAR), has(Items.NETHER_STAR))
+            .unlockedBy(getHasName(ModBlocks.LUNATEAN_LOG.get()), has(ModBlocks.LUNATEAN_LOG.get()))
+            .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FRAGMENT_OF_THE_VOID.get())
+            .pattern("SSS")
+            .pattern("SES")
+            .pattern("SSS")
+            .define('S', Items.NETHER_STAR)
+            .define('E', ModItems.ECHO_OF_OBLIVION.get())
+            .unlockedBy(getHasName(Items.NETHER_STAR), has(Items.NETHER_STAR))
+            .unlockedBy(getHasName(ModItems.ECHO_OF_OBLIVION.get()), has(ModItems.ECHO_OF_OBLIVION.get()))
+            .save(pWriter);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

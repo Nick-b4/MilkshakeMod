@@ -45,9 +45,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.LUNATEAN_SLAB.get());
 
         dropSelf(ModBlocks.LUNATEAN_LOG.get());
-        dropSelf(ModBlocks.LUNATEAN_WOOD.get());
         dropSelf(ModBlocks.STRIPPED_LUNATEAN_LOG.get());
-        dropSelf(ModBlocks.STRIPPED_LUNATEAN_WOOD.get());
+        dropSelf(ModBlocks.ANCIENT_WOOD_LOG.get());
         dropSelf(ModBlocks.LUNATEAN_PLANKS.get());
         dropSelf(ModBlocks.LUNATEAN_LEAVES.get());
 

@@ -53,5 +53,16 @@
   "entity.milkshakemod.soul_bender": "Soul Bender",
   "item.milkshakemod.ember_of_eternity": "Ember of Eternity",
   "item.milkshakemod.stone_tablet": "Stone Tablet",
-  "block.milkshakemod.lunatean_sapling": "Lunatean Sapling"
+  "block.milkshakemod.lunatean_sapling": "Lunatean Sapling",
+  "item.milkshakemod.ender_heart": "Ender Heart",
+  "item.milkshakemod.echo_of_oblivion": "Echo of Oblivion",
+  "item.milkshakemod.fragment_of_the_void": "Fragment of the Void",
+  "block.milkshakemod.ancient_wood_log": "Ancient Wood",
+  "item.milkshakemod.essence_of_the_bloom": "Essence of the Bloom",
+  "item.milkshakemod.root_of_renewal": "Root of Renewal",
+  "item.milkshakemod.lunatean_paxel": "Lunatean Paxel",
+  "item.milkshakemod.infernal_core": "Infernal Core",
+  "item.milkshakemod.bottle_of_black_flame": "Bottle of Black Flame",
+  "block.milkshakemod.lunatean_crop": "Lunatean Seed"
+  
 }

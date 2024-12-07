@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "milkshakemod:lunatean_log"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "LSL",
+    "LLL"
+  ],
+  "result": {
+    "item": "milkshakemod:ancient_wood_log"
+  },
+  "show_notification": true
+}
