@@ -1,5 +1,6 @@
 package net.milkshake.milkshakemod.block.entity; 
 
+import net.milkshake.milkshakemod.block.ModBlocks;
 import net.milkshake.milkshakemod.entity.ModEntities;
 import net.milkshake.milkshakemod.item.ModItems;
 import net.milkshake.milkshakemod.screen.ChaliceOfEternalFlameMenu;
@@ -18,6 +19,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -144,9 +146,9 @@ public class ChaliceOfNatureBlockEntity extends BlockEntity implements MenuProvi
         // - Bottle of Black Flame in slot 1
         // - Lunateans in slots 2 and 3
         boolean hasCorrectItems = 
-            !slot0.isEmpty() && slot0.getItem() == ModItems.EYES_OF_A_FRIEND.get() &&
-            !slot1.isEmpty() && slot1.getItem() == ModItems.BOTTLE_OF_BLACK_FLAME.get() &&
-            !slot2.isEmpty() && slot2.getItem() == ModItems.LUNATEAN.get() &&
+            !slot0.isEmpty() && slot0.getItem() instanceof BlockItem && ((BlockItem)slot0.getItem()).getBlock() == ModBlocks.ANCIENT_WOOD_LOG.get() &&
+            !slot1.isEmpty() && slot1.getItem() == ModItems.ESSENCE_OF_THE_BLOOM.get() &&
+            !slot2.isEmpty() && slot2.getItem() == ModItems.ROOT_OF_RENEWAL.get() &&
             !slot3.isEmpty() && slot3.getItem() == ModItems.LUNATEAN.get();
 
         if(hasCorrectItems) {

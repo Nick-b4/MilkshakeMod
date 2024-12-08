@@ -12,17 +12,14 @@ import net.minecraft.world.Container;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
@@ -144,11 +141,12 @@ public class ChaliceOfDeceptionBlockEntity extends BlockEntity implements MenuPr
         // Check if the recipe matches:
         // - Eyes of a Friend in slot 0
         // - Bottle of Black Flame in slot 1
-        // - Lunateans in slots 2 and 3
+        // - Stone Tablet in slot 2
+        // - Lunateans in slot 3
         boolean hasCorrectItems = 
             !slot0.isEmpty() && slot0.getItem() == ModItems.EYES_OF_A_FRIEND.get() &&
             !slot1.isEmpty() && slot1.getItem() == ModItems.BOTTLE_OF_BLACK_FLAME.get() &&
-            !slot2.isEmpty() && slot2.getItem() == ModItems.LUNATEAN.get() &&
+            !slot2.isEmpty() && slot2.getItem() == ModItems.STONE_TABLET.get() &&
             !slot3.isEmpty() && slot3.getItem() == ModItems.LUNATEAN.get();
 
         if(hasCorrectItems) {

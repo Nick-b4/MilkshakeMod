@@ -143,9 +143,9 @@ public class ChaliceOfEternalFlameBlockEntity extends BlockEntity implements Men
         // - Bottle of Black Flame in slot 1
         // - Lunateans in slots 2 and 3
         boolean hasCorrectItems = 
-            !slot0.isEmpty() && slot0.getItem() == ModItems.EYES_OF_A_FRIEND.get() &&
-            !slot1.isEmpty() && slot1.getItem() == ModItems.BOTTLE_OF_BLACK_FLAME.get() &&
-            !slot2.isEmpty() && slot2.getItem() == ModItems.LUNATEAN.get() &&
+            !slot0.isEmpty() && slot0.getItem() == ModItems.INFERNAL_CORE.get() &&
+            !slot1.isEmpty() && slot1.getItem() == ModItems.SOULFIRE_CRYSTAL.get() &&
+            !slot2.isEmpty() && slot2.getItem() == ModItems.EMBER_OF_ETERNITY.get() &&
             !slot3.isEmpty() && slot3.getItem() == ModItems.LUNATEAN.get();
 
         if(hasCorrectItems) {
