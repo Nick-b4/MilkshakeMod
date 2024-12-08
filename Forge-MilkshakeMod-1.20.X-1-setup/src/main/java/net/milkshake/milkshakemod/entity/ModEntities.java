@@ -11,19 +11,21 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
-            DeferredRegister.create(Registries.ENTITY_TYPE, "milkshakemod");
+            DeferredRegister.create(Registries.ENTITY_TYPE, MilkshakeMod.Mod_ID);
 
     public static final RegistryObject<EntityType<ItachiEntity>> ITACHI =
             ENTITY_TYPES.register("itachi",
-                    () -> EntityType.Builder.of(ItachiEntity::new, MobCategory.CREATURE)
+                    () -> EntityType.Builder.of(ItachiEntity::new, MobCategory.MONSTER)
                             .sized(0.6f, 1.8f)
-                            .build(MilkshakeMod.Mod_ID + ":itachi"));
+                            .fireImmune()
+                            .build("itachi"));
 
     public static final RegistryObject<EntityType<InfernalBeingEntity>> INFERNAL_BEING =
             ENTITY_TYPES.register("infernal_being",
                     () -> EntityType.Builder.of(InfernalBeingEntity::new, MobCategory.MONSTER)
                             .sized(0.6f, 1.8f)
-                            .build(MilkshakeMod.Mod_ID + ":infernal_being"));
+                            .fireImmune()
+                            .build("infernal_being"));
 
     public static final RegistryObject<EntityType<UnlimitedVoidEntity>> UNLIMITED_VOID =
             ENTITY_TYPES.register("unlimited_void",
@@ -41,7 +43,8 @@ public class ModEntities {
             ENTITY_TYPES.register("root",
                     () -> EntityType.Builder.of(RootEntity::new, MobCategory.MONSTER)
                             .sized(0.6f, 1.95f)
-                            .build(MilkshakeMod.Mod_ID + ":root"));
+                            .fireImmune()
+                            .build("root"));
 
     public static final RegistryObject<EntityType<VoidMageEntity>> VOID_MAGE = 
             ENTITY_TYPES.register("void_mage",

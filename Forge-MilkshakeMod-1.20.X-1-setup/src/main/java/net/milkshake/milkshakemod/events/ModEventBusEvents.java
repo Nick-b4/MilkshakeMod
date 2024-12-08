@@ -11,6 +11,8 @@ import net.minecraftforge.fml.common.Mod;
 public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
-        event.put(ModEntities.UNLIMITED_VOID.get(), UnlimitedVoidEntity.createAttributes().build());
+        event.put(ModEntities.INFERNAL_BEING.get(), InfernalBeingEntity.createAttributes().build());
+        event.put(ModEntities.ITACHI.get(), ItachiEntity.createAttributes().build());
+        event.put(ModEntities.ROOT.get(), RootEntity.createAttributes().build());
     }
 }

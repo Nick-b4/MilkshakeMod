@@ -21,8 +21,11 @@ import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
 public class ItachiEntity extends Monster { 
+    private static final EntityDimensions DIMENSIONS = EntityDimensions.fixed(0.6F, 1.8F);
+
     public ItachiEntity(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
+        this.xpReward = 500;
     }
 
     public final AnimationState idleAnimationState = new AnimationState();
@@ -115,7 +118,7 @@ public class ItachiEntity extends Monster {
 
     @Override
     public EntityDimensions getDimensions(Pose pose) {
-        return EntityDimensions.fixed(0.6F, 1.8F);
+        return DIMENSIONS;
     }
 
     // Boss Bar
