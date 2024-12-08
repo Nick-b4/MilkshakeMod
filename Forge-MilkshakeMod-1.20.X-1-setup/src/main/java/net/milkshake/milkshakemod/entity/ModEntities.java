@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
-            DeferredRegister.create(Registries.ENTITY_TYPE, MilkshakeMod.Mod_ID);
+            DeferredRegister.create(Registries.ENTITY_TYPE, "milkshakemod");
 
     public static final RegistryObject<EntityType<ItachiEntity>> ITACHI =
             ENTITY_TYPES.register("itachi",
@@ -28,8 +28,8 @@ public class ModEntities {
     public static final RegistryObject<EntityType<UnlimitedVoidEntity>> UNLIMITED_VOID =
             ENTITY_TYPES.register("unlimited_void",
                     () -> EntityType.Builder.of(UnlimitedVoidEntity::new, MobCategory.MONSTER)
-                            .sized(0.6f, 1.8f)
-                            .build(MilkshakeMod.Mod_ID + ":unlimited_void"));
+                            .sized(1.5f, 3.0f)
+                            .build("unlimited_void"));
 
     public static final RegistryObject<EntityType<SoulBenderEntity>> SOUL_BENDER = 
             ENTITY_TYPES.register("soul_bender",

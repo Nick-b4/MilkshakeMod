@@ -1,7 +1,11 @@
 package net.milkshake.milkshakemod.entity.custom;
 
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerBossEvent;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.BossEvent;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityDimensions;
@@ -24,6 +28,9 @@ public class UnlimitedVoidEntity extends Monster {
     public final AnimationState idleAnimationState = new AnimationState();
     public final AnimationState walkAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
+
+    private final ServerBossEvent bossEvent =
+            (ServerBossEvent) new ServerBossEvent(Component.literal("Unlimited Void"), BossEvent.BossBarColor.PURPLE, BossEvent.BossBarOverlay.PROGRESS).setPlayBossMusic(true).setDarkenScreen(true).setCreateWorldFog(true);
 
     @Override
     public void tick() {
@@ -78,8 +85,8 @@ public class UnlimitedVoidEntity extends Monster {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
-                .add(Attributes.MAX_HEALTH, 300.0D)
-                .add(Attributes.MOVEMENT_SPEED, 0.3D)
+                .add(Attributes.MAX_HEALTH, 5000.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.8D)
                 .add(Attributes.ATTACK_DAMAGE, 15.0D)
                 .add(Attributes.KNOCKBACK_RESISTANCE, 0.6D)
                 .add(Attributes.ATTACK_KNOCKBACK, 1.0D);
@@ -107,4 +114,24 @@ public class UnlimitedVoidEntity extends Monster {
     public EntityDimensions getDimensions(Pose pose) {
         return EntityDimensions.fixed(1.5F, 3.0F);
     }
+
+    // Boss Bar
+    @Override
+    public void startSeenByPlayer(ServerPlayer pServerPlayer) {
+        super.startSeenByPlayer(pServerPlayer);
+        this.bossEvent.addPlayer(pServerPlayer);
+    }
+
+    @Override
+    public void stopSeenByPlayer(ServerPlayer pServerPlayer) {
+        super.stopSeenByPlayer(pServerPlayer);
+        this.bossEvent.removePlayer(pServerPlayer);
+    }
+
+    @Override
+    public void aiStep() {
+        super.aiStep();
+        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
+    }
+
 } 

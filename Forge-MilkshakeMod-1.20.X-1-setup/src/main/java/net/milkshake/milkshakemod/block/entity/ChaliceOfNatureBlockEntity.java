@@ -142,9 +142,10 @@ public class ChaliceOfNatureBlockEntity extends BlockEntity implements MenuProvi
         ItemStack slot3 = itemHandler.getStackInSlot(3);
 
         // Check if the recipe matches:
-        // - Eyes of a Friend in slot 0
-        // - Bottle of Black Flame in slot 1
-        // - Lunateans in slots 2 and 3
+        // - Ancient Wood Log in slot 0
+        // - Essence of the Bloom in slot 1
+        // - Root of Renewal in slot 2
+        // - Lunateans in slot 3
         boolean hasCorrectItems = 
             !slot0.isEmpty() && slot0.getItem() instanceof BlockItem && ((BlockItem)slot0.getItem()).getBlock() == ModBlocks.ANCIENT_WOOD_LOG.get() &&
             !slot1.isEmpty() && slot1.getItem() == ModItems.ESSENCE_OF_THE_BLOOM.get() &&
@@ -165,7 +166,7 @@ public class ChaliceOfNatureBlockEntity extends BlockEntity implements MenuProvi
     }
 
     private void summonRoot(Level level, BlockPos pos) {
-        // Spawn Itachi 10 blocks north of the chalice and 1 block up
+        // Spawn Roots 10 blocks north of the chalice and 1 block up
         BlockPos spawnPos = pos.offset(0, 1, -10);
         
         ModEntities.ROOT.get().spawn(

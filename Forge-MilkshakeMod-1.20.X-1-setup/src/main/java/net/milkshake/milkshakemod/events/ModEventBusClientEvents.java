@@ -1,6 +1,7 @@
 package net.milkshake.milkshakemod.events;
 
 import net.milkshake.milkshakemod.MilkshakeMod;
+import net.milkshake.milkshakemod.entity.ModEntities;
 import net.milkshake.milkshakemod.entity.client.*;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -16,5 +17,11 @@ public class ModEventBusClientEvents {
         event.registerLayerDefinition(ModModelLayers.UNLIMITED_VOID_LAYER, UnlimitedVoidModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.ROOT_LAYER, RootModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.VOID_MAGE_LAYER, VoidMageModel::createBodyLayer);
+    }
+
+    @SubscribeEvent
+    public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(ModEntities.UNLIMITED_VOID.get(),
+            UnlimitedVoidRenderer::new);
     }
 }

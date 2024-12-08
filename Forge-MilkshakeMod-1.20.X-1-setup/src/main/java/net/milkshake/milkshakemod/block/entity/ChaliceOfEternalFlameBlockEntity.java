@@ -139,9 +139,10 @@ public class ChaliceOfEternalFlameBlockEntity extends BlockEntity implements Men
         ItemStack slot3 = itemHandler.getStackInSlot(3);
 
         // Check if the recipe matches:
-        // - Eyes of a Friend in slot 0
-        // - Bottle of Black Flame in slot 1
-        // - Lunateans in slots 2 and 3
+        // - Infernal Core in slot 0
+        // - Soulfire Crystal in slot 1
+        // - Ember of Eternity in slot 2
+        // - Lunateans in slot 3
         boolean hasCorrectItems = 
             !slot0.isEmpty() && slot0.getItem() == ModItems.INFERNAL_CORE.get() &&
             !slot1.isEmpty() && slot1.getItem() == ModItems.SOULFIRE_CRYSTAL.get() &&
@@ -162,7 +163,7 @@ public class ChaliceOfEternalFlameBlockEntity extends BlockEntity implements Men
     }
 
     private void summonInfernalBeing(Level level, BlockPos pos) {
-        // Spawn Itachi 10 blocks north of the chalice and 1 block up
+        // Spawn Infernal Being 10 blocks north of the chalice and 1 block up
         BlockPos spawnPos = pos.offset(0, 1, -10);
         
         ModEntities.INFERNAL_BEING.get().spawn(

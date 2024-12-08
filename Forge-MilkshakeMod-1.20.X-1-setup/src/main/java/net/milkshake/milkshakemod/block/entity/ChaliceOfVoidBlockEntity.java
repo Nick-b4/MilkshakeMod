@@ -140,9 +140,10 @@ public class ChaliceOfVoidBlockEntity extends BlockEntity implements MenuProvide
         ItemStack slot3 = itemHandler.getStackInSlot(3);
 
         // Check if the recipe matches:
-        // - Eyes of a Friend in slot 0
-        // - Bottle of Black Flame in slot 1
-        // - Lunateans in slots 2 and 3
+        // - Ender Heart in slot 0
+        // - Echo of Oblivion in slot 1
+        // - Fragment of the Void in slot 2
+        // - Lunateans in slot 3
         boolean hasCorrectItems = 
             !slot0.isEmpty() && slot0.getItem() == ModItems.ENDER_HEART.get() &&
             !slot1.isEmpty() && slot1.getItem() == ModItems.ECHO_OF_OBLIVION.get() &&
@@ -163,7 +164,7 @@ public class ChaliceOfVoidBlockEntity extends BlockEntity implements MenuProvide
     }
 
     private void summonUnlimitedVoid(Level level, BlockPos pos) {
-        // Spawn Itachi 10 blocks north of the chalice and 1 block up
+        // Spawn Unlimtited void 10 blocks north of the chalice and 1 block up
         BlockPos spawnPos = pos.offset(0, 1, -10);
         
         ModEntities.UNLIMITED_VOID.get().spawn(
