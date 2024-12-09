@@ -17,7 +17,6 @@ public class ModEntities {
             ENTITY_TYPES.register("itachi",
                     () -> EntityType.Builder.of(ItachiEntity::new, MobCategory.MONSTER)
                             .sized(0.6f, 1.8f)
-                            .fireImmune()
                             .build("itachi"));
 
     public static final RegistryObject<EntityType<InfernalBeingEntity>> INFERNAL_BEING =
@@ -51,6 +50,12 @@ public class ModEntities {
                     () -> EntityType.Builder.of(VoidMageEntity::new, MobCategory.MONSTER)
                             .sized(0.6f, 1.95f)
                             .build(MilkshakeMod.Mod_ID + ":void_mage"));
+
+    public static final RegistryObject<EntityType<ItachiShadowCloneEntity>> ITACHI_SHADOW_CLONE =
+            ENTITY_TYPES.register("itachi_shadow_clone",
+                    () -> EntityType.Builder.of(ItachiShadowCloneEntity::new, MobCategory.MONSTER)
+                            .sized(0.6f, 1.8f)
+                            .build("itachi_shadow_clone"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

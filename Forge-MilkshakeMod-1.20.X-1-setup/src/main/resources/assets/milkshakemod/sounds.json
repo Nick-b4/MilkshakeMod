@@ -1,4 +1,3 @@
-
 {
     "metal_detector_found_ore": {
       "subtitles": "sounds.milkshakemod.metal_detector_found_ore",
@@ -40,6 +39,21 @@
       "sounds": [
         {
           "name": "milkshakemod:bar_brawl",
+          "stream": true
+        }
+      ]
+    },
+    "entity.itachi.spawn": {
+      "subtitle": "Itachi appears",
+      "sounds": [
+        "milkshakemod:entity/itachi/spawn"
+      ]
+    },
+    "entity.itachi.music": {
+      "subtitle": "Itachi's Theme",
+      "sounds": [
+        {
+          "name": "milkshakemod:entity/itachi/boss_music",
           "stream": true
         }
       ]

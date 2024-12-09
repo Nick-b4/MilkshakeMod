@@ -22,4 +22,7 @@ public class ModModelLayers {
 
     public static final ModelLayerLocation VOID_MAGE_LAYER = new ModelLayerLocation(
             new ResourceLocation(MilkshakeMod.Mod_ID, "void_mage"), "main");
+
+    public static final ModelLayerLocation ITACHI_SHADOW_CLONE_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MilkshakeMod.Mod_ID, "itachishadowclone"), "main");
 }

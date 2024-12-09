@@ -14,5 +14,8 @@ public class ModEventBusEvents {
         event.put(ModEntities.INFERNAL_BEING.get(), InfernalBeingEntity.createAttributes().build());
         event.put(ModEntities.ITACHI.get(), ItachiEntity.createAttributes().build());
         event.put(ModEntities.ROOT.get(), RootEntity.createAttributes().build());
+        event.put(ModEntities.ITACHI_SHADOW_CLONE.get(), ItachiShadowCloneEntity.createAttributes().build());
+        event.put(ModEntities.VOID_MAGE.get(), VoidMageEntity.createAttributes().build());
+        event.put(ModEntities.SOUL_BENDER.get(), SoulBenderEntity.createAttributes().build());
     }
 }

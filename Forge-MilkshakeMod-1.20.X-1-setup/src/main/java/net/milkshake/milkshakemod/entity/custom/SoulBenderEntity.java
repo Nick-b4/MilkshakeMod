@@ -30,10 +30,11 @@ public class SoulBenderEntity extends Monster {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
-                .add(Attributes.MAX_HEALTH, 40.0D)
+                .add(Attributes.MAX_HEALTH, 120.0D)
+                .add(Attributes.FOLLOW_RANGE, 32D)
                 .add(Attributes.MOVEMENT_SPEED, 0.3D)
-                .add(Attributes.ATTACK_DAMAGE, 5.0D)
-                .add(Attributes.ARMOR, 4.0D);
+                .add(Attributes.ATTACK_DAMAGE, 20.0D)
+                .add(Attributes.ATTACK_SPEED, 1.0D);
     }
 
     @Override

@@ -100,6 +100,7 @@ public class MilkshakeMod {
                 EntityRenderers.register(ModEntities.ROOT.get(), RootRenderer::new);
                 EntityRenderers.register(ModEntities.UNLIMITED_VOID.get(), UnlimitedVoidRenderer::new);
                 EntityRenderers.register(ModEntities.INFERNAL_BEING.get(), InfernalBeingRenderer::new);
+                EntityRenderers.register(ModEntities.ITACHI_SHADOW_CLONE.get(), ItachiShadowCloneRenderer::new);
 
                 MenuScreens.register(ModMenuTypes.CHALICE_OF_DECEPTION_MENU.get(), ChaliceOfDeceptionScreen::new);
                 MenuScreens.register(ModMenuTypes.CHALICE_OF_ETERNAL_FLAME_MENU.get(), ChaliceOfEternalFlameScreen::new);
@@ -116,7 +117,9 @@ public class MilkshakeMod {
             event.registerLayerDefinition(ModModelLayers.UNLIMITED_VOID_LAYER, UnlimitedVoidModel::createBodyLayer);
             event.registerLayerDefinition(ModModelLayers.INFERNAL_BEING_LAYER, InfernalBeingModel::createBodyLayer);
             event.registerLayerDefinition(ModModelLayers.VOID_MAGE_LAYER, VoidMageModel::createBodyLayer);
+            event.registerLayerDefinition(ModModelLayers.ITACHI_SHADOW_CLONE_LAYER, ItachiShadowCloneModel::createBodyLayer);
         }
+
     }
 
 }

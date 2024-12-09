@@ -23,6 +23,8 @@ public class ModSounds {
 
     public static final RegistryObject<SoundEvent> BAR_BRAWL = registerSoundEvents("bar_brawl");
 
+    public static final RegistryObject<SoundEvent> ITACHI_SPAWN = registerSoundEvent("entity.itachi.spawn");
+    public static final RegistryObject<SoundEvent> ITACHI_MUSIC = registerSoundEvent("entity.itachi.music");
 
     public static final ForgeSoundType SOUND_BLOCK_SOUNDS = new ForgeSoundType(1f, 1f,
             ModSounds.SOUND_BLOCK_BREAK, ModSounds.SOUND_BLOCK_STEP, ModSounds.SOUND_BLOCK_PLACE,
@@ -31,6 +33,11 @@ public class ModSounds {
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(MilkshakeMod.Mod_ID, name)));
+    }
+
+    private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
+        return SOUND_EVENTS.register(name, 
+            () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("milkshakemod", name)));
     }
 
     public static void register(IEventBus eventBus) {
