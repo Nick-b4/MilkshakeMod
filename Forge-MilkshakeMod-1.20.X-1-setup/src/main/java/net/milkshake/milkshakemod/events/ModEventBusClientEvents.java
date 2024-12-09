@@ -17,6 +17,7 @@ public class ModEventBusClientEvents {
         event.registerLayerDefinition(ModModelLayers.UNLIMITED_VOID_LAYER, UnlimitedVoidModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.ROOT_LAYER, RootModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.VOID_MAGE_LAYER, VoidMageModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.FROST_FALLEN_KING_LAYER, FrostFallenKingModel::createBodyLayer);
     }
 
     @SubscribeEvent

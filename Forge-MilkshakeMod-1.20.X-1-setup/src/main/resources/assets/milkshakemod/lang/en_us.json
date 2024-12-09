@@ -42,7 +42,7 @@
   "item.milkshakemod.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.milkshakemod.bar_brawl_music_disc.desc": "Fight Your Local Briskle",
   "item.milkshakemod.itachi_spawn_egg": "Itachi Spawn Egg",
-  "entity.milkshakemod.itachi": "Itachi",
+  "entity.milkshakemod.itachi": "Itachi Uchiha",
   "block.milkshakemod.chalice_of_deception": "Chalice of Deception",
   "block.milkshakemod.chalice_of_eternal_flame": "Chalice of Eternal Flame",
   "item.milkshakemod.eyes_of_a_friend": "Eyes of a Friend",
@@ -63,6 +63,9 @@
   "item.milkshakemod.lunatean_paxel": "Lunatean Paxel",
   "item.milkshakemod.infernal_core": "Infernal Core",
   "item.milkshakemod.bottle_of_black_flame": "Bottle of Black Flame",
-  "block.milkshakemod.lunatean_crop": "Lunatean Seed"
-  
+  "block.milkshakemod.lunatean_crop": "Lunatean Seed",
+  "entity.milkshakemod.frost_fallen_king": "Frost Fallen King",
+  "entity.milkshakemod.infernal_being": "Infernal Being",
+  "entity.milkshakemod.unlimited_void": "Unlimited Void",
+  "entity.milkshakemod.root": "Ancient Root"
 }

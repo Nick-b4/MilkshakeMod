@@ -17,5 +17,7 @@ public class ModEventBusEvents {
         event.put(ModEntities.ITACHI_SHADOW_CLONE.get(), ItachiShadowCloneEntity.createAttributes().build());
         event.put(ModEntities.VOID_MAGE.get(), VoidMageEntity.createAttributes().build());
         event.put(ModEntities.SOUL_BENDER.get(), SoulBenderEntity.createAttributes().build());
+        event.put(ModEntities.FROST_FALLEN_KING.get(), FrostFallenKingEntity.createAttributes().build());
+        event.put(ModEntities.UNLIMITED_VOID.get(), UnlimitedVoidEntity.createAttributes().build());
     }
 }

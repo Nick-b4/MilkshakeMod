@@ -8,31 +8,31 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.BossEvent;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.AnimationState;
-import net.minecraft.world.entity.EntityDimensions;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Pose;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-public class UnlimitedVoidEntity extends Monster {
-    public UnlimitedVoidEntity(EntityType<? extends Monster> entityType, Level level) {
-        super(entityType, level);
-        this.xpReward = 50;
-    }
+public class FrostFallenKingEntity extends Monster {
+    private static final EntityDimensions DIMENSIONS = EntityDimensions.fixed(0.6F, 1.8F);
 
     public final AnimationState idleAnimationState = new AnimationState();
     public final AnimationState walkAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
 
     private final ServerBossEvent bossEvent =
-            (ServerBossEvent) new ServerBossEvent(Component.literal("Unlimited Void"), BossEvent.BossBarColor.PURPLE, BossEvent.BossBarOverlay.PROGRESS).setPlayBossMusic(true).setDarkenScreen(true).setCreateWorldFog(true);
+            (ServerBossEvent) new ServerBossEvent(Component.literal("Frost Fallen King"), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.PROGRESS).setPlayBossMusic(true).setDarkenScreen(true).setCreateWorldFog(true);
+
+    public FrostFallenKingEntity(EntityType<? extends Monster> entityType, Level level) {
+        super(entityType, level);
+        this.xpReward = 500;
+    }
 
     @Override
     public void tick() {
@@ -44,11 +44,11 @@ public class UnlimitedVoidEntity extends Monster {
     }
 
     private void setupAnimationStates() {
-        if (isMoving()) {
-            idleAnimationState.stop();
-            walkAnimationState.startIfStopped(this.tickCount);
+        if (this.isMoving()) {
+            this.idleAnimationState.stop();
+            this.walkAnimationState.startIfStopped(this.tickCount);
         } else {
-            walkAnimationState.stop();
+            this.walkAnimationState.stop();
             if(this.idleAnimationTimeout <= 0) {
                 this.idleAnimationTimeout = this.random.nextInt(40) + 80;
                 this.idleAnimationState.start(this.tickCount);
@@ -63,58 +63,55 @@ public class UnlimitedVoidEntity extends Monster {
     }
 
     @Override
-    protected void updateWalkAnimation(float pPartialTick) {
-        float f;
-        if(this.getPose() == Pose.STANDING) {
-            f = Math.min(pPartialTick * 3F, 1f);
-        } else {
-            f = 0f;
-        }
-
-        this.walkAnimation.update(f, 0.1f);
-    }
-
-    @Override
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
-        this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2D, true));
-        this.goalSelector.addGoal(2, new WaterAvoidingRandomStrollGoal(this, 1.0D));
-        this.goalSelector.addGoal(3, new LookAtPlayerGoal(this, Player.class, 8.0F));
-        this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
+        this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2D, true) {
+            @Override
+            protected double getAttackReachSqr(LivingEntity target) {
+                return 4.0D + target.getBbWidth();
+            }
+        });
+        this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 0.7D));
+        this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 16f));
+        this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
 
         this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, Player.class, true));
+        this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
+        this.targetSelector.addGoal(3, (new HurtByTargetGoal(this)).setAlertOthers());
     }
 
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
-                .add(Attributes.MAX_HEALTH, 5000.0D)
-                .add(Attributes.MOVEMENT_SPEED, 0.8D)
-                .add(Attributes.ATTACK_DAMAGE, 15.0D)
-                .add(Attributes.KNOCKBACK_RESISTANCE, 0.6D)
-                .add(Attributes.ATTACK_KNOCKBACK, 1.0D);
+                .add(Attributes.MAX_HEALTH, 5000D)
+                .add(Attributes.FOLLOW_RANGE, 48D)
+                .add(Attributes.MOVEMENT_SPEED, 0.5D)
+                .add(Attributes.ARMOR_TOUGHNESS, 10f)
+                .add(Attributes.ATTACK_KNOCKBACK, 0.5f)
+                .add(Attributes.ATTACK_DAMAGE, 255f)
+                .add(Attributes.ATTACK_SPEED, 2.0D);
     }
 
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {
-        return SoundEvents.WARDEN_AMBIENT;
+        return SoundEvents.PARROT_AMBIENT;
     }
 
     @Nullable
     @Override
     protected SoundEvent getHurtSound(DamageSource pDamageSource) {
-        return SoundEvents.WARDEN_HURT;
+        return SoundEvents.SHULKER_HURT;
     }
 
     @Nullable
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.WARDEN_DEATH;
+        return SoundEvents.ENDER_DRAGON_DEATH;
     }
 
     @Override
     public EntityDimensions getDimensions(Pose pose) {
-        return EntityDimensions.fixed(1.5F, 3.0F);
+        return DIMENSIONS;
     }
 
     // Boss Bar
@@ -138,8 +135,7 @@ public class UnlimitedVoidEntity extends Monster {
 
     @Override
     public Component getName() {
-        return Component.translatable("entity.milkshakemod.unlimited_void")
-                .withStyle(ChatFormatting.DARK_PURPLE);
+        return Component.translatable("entity.milkshakemod.frost_fallen_king")
+                .withStyle(ChatFormatting.AQUA);
     }
-
-} 
+}

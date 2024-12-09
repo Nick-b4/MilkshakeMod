@@ -30,7 +30,7 @@ public class ModEntities {
             ENTITY_TYPES.register("unlimited_void",
                     () -> EntityType.Builder.of(UnlimitedVoidEntity::new, MobCategory.MONSTER)
                             .sized(1.5f, 3.0f)
-                            .build("unlimited_void"));
+                            .build(MilkshakeMod.Mod_ID + ":unlimited_void"));
 
     public static final RegistryObject<EntityType<SoulBenderEntity>> SOUL_BENDER = 
             ENTITY_TYPES.register("soul_bender",
@@ -56,6 +56,12 @@ public class ModEntities {
                     () -> EntityType.Builder.of(ItachiShadowCloneEntity::new, MobCategory.MONSTER)
                             .sized(0.6f, 1.8f)
                             .build("itachi_shadow_clone"));
+
+    public static final RegistryObject<EntityType<FrostFallenKingEntity>> FROST_FALLEN_KING =
+            ENTITY_TYPES.register("frost_fallen_king",
+                    () -> EntityType.Builder.of(FrostFallenKingEntity::new, MobCategory.MONSTER)
+                            .sized(1.4F, 3.6F)
+                            .build("frost_fallen_king"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

@@ -1,5 +1,6 @@
 package net.milkshake.milkshakemod.entity.custom;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerPlayer;
@@ -138,6 +139,12 @@ public class InfernalBeingEntity extends Monster {
     public void aiStep() {
         super.aiStep();
         this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
+    }
+
+    @Override
+    public Component getName() {
+        return Component.translatable("entity.milkshakemod.infernal_being")
+                .withStyle(ChatFormatting.GOLD);
     }
 
 }
