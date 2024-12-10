@@ -27,6 +27,9 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.entity.Entity;
 import net.milkshake.milkshakemod.entity.ModEntities;
 import net.minecraft.ChatFormatting;
+import net.minecraft.world.entity.ExperienceOrb;
+import net.minecraft.world.item.ItemStack;
+import net.milkshake.milkshakemod.item.ModItems;
 
 public class ItachiEntity extends Monster { 
     private static final EntityDimensions DIMENSIONS = EntityDimensions.fixed(0.6F, 1.8F);
@@ -251,6 +254,14 @@ public class ItachiEntity extends Monster {
     public Component getName() {
         return Component.translatable("entity.milkshakemod.itachi")
                 .withStyle(ChatFormatting.RED);
+    }
+
+    @Override
+    protected void dropCustomDeathLoot(DamageSource pSource, int pLooting, boolean pRecentlyHit) {
+        super.dropCustomDeathLoot(pSource, pLooting, pRecentlyHit);
+        
+        ItemStack fragmentOfShadows = new ItemStack(ModItems.FRAGMENT_OF_SHADOWS.get(), 1);
+        this.spawnAtLocation(fragmentOfShadows);
     }
 
 }

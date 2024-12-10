@@ -78,6 +78,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.STONE_TABLET.get());
                         pOutput.accept(ModBlocks.LUNATEAN_SAPLING.get());
                         pOutput.accept(ModItems.LUNATEAN_PAXEL.get());
+                        pOutput.accept(ModItems.ESSENCE_OF_THE_ABYSS.get());
+                        pOutput.accept(ModItems.FRAGMENT_OF_SHADOWS.get());
+                        pOutput.accept(ModItems.BLAZING_EMBER.get());
+                        pOutput.accept(ModItems.HEART_OF_THE_FOREST.get());
+                        pOutput.accept(ModItems.STAR_OF_YULE.get());
                     })
                     .build());
 

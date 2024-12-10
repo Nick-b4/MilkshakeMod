@@ -99,7 +99,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ESSENCE_OF_THE_BLOOM);
         simpleItem(ModItems.ROOT_OF_RENEWAL);
         simpleItem(ModItems.LUNATEAN_PAXEL);
-        
+        simpleItem(ModItems.ESSENCE_OF_THE_ABYSS);
+        simpleItem(ModItems.FRAGMENT_OF_SHADOWS);
+        simpleItem(ModItems.BLAZING_EMBER);
+        simpleItem(ModItems.HEART_OF_THE_FOREST);
+        simpleItem(ModItems.STAR_OF_YULE);
+
     }
 
     

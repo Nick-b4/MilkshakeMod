@@ -19,6 +19,7 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.milkshake.milkshakemod.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
 public class RootEntity extends Monster { 
@@ -145,6 +146,14 @@ public class RootEntity extends Monster {
     public Component getName() {
         return Component.translatable("entity.milkshakemod.root")
                 .withStyle(ChatFormatting.DARK_GREEN);
+    }
+
+    @Override
+    protected void dropCustomDeathLoot(DamageSource pSource, int pLooting, boolean pRecentlyHit) {
+        super.dropCustomDeathLoot(pSource, pLooting, pRecentlyHit);
+        
+        // Drop the Heart of the Forest item
+        this.spawnAtLocation(ModItems.HEART_OF_THE_FOREST.get());
     }
 
 }

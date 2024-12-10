@@ -19,6 +19,7 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.milkshake.milkshakemod.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
 public class InfernalBeingEntity extends Monster { 
@@ -145,6 +146,14 @@ public class InfernalBeingEntity extends Monster {
     public Component getName() {
         return Component.translatable("entity.milkshakemod.infernal_being")
                 .withStyle(ChatFormatting.GOLD);
+    }
+
+    @Override
+    protected void dropCustomDeathLoot(DamageSource pSource, int pLooting, boolean pRecentlyHit) {
+        super.dropCustomDeathLoot(pSource, pLooting, pRecentlyHit);
+        
+        // Drop Blazing Ember with 100% chance
+        this.spawnAtLocation(ModItems.BLAZING_EMBER.get());
     }
 
 }

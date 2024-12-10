@@ -102,6 +102,17 @@ public static final RegistryObject<Item> RAW_LUNATEAN = ITEMS.register("raw_luna
             () -> new Item(new Item.Properties()));    
             public static final RegistryObject<Item> ROOT_OF_RENEWAL = ITEMS.register("root_of_renewal",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> ESSENCE_OF_THE_ABYSS = ITEMS.register("essence_of_the_abyss",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FRAGMENT_OF_SHADOWS = ITEMS.register("fragment_of_shadows",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BLAZING_EMBER = ITEMS.register("blazing_ember",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HEART_OF_THE_FOREST = ITEMS.register("heart_of_the_forest",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STAR_OF_YULE = ITEMS.register("star_of_yule",
+            () -> new Item(new Item.Properties()));
     
     public static final RegistryObject<Item> LUNATEAN_PAXEL = ITEMS.register("lunatean_paxel",
         () -> new net.milkshake.milkshakemod.item.custom.LunateanPaxel(ModToolTiers.LUNATEAN, 5.0f));

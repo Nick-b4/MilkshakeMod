@@ -67,5 +67,10 @@
   "entity.milkshakemod.frost_fallen_king": "Frost Fallen King",
   "entity.milkshakemod.infernal_being": "Infernal Being",
   "entity.milkshakemod.unlimited_void": "Unlimited Void",
-  "entity.milkshakemod.root": "Ancient Root"
+  "entity.milkshakemod.root": "Ancient Root",
+  "item.milkshakemod.essence_of_the_abyss": "Essence of the Abyss",
+  "item.milkshakemod.fragment_of_shadows": "Fragment of Shadows",
+  "item.milkshakemod.blazing_ember": "Blazing Ember",
+  "item.milkshakemod.heart_of_the_forest": "Heart of the Forest",
+  "item.milkshakemod.star_of_yule": "Star of Yule"
 }

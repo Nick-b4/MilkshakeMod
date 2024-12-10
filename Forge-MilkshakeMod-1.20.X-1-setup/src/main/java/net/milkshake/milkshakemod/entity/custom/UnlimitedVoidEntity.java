@@ -19,6 +19,9 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.ExperienceOrb;
+import net.minecraft.world.item.ItemStack;
+import net.milkshake.milkshakemod.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
 public class UnlimitedVoidEntity extends Monster {
@@ -140,6 +143,15 @@ public class UnlimitedVoidEntity extends Monster {
     public Component getName() {
         return Component.translatable("entity.milkshakemod.unlimited_void")
                 .withStyle(ChatFormatting.DARK_PURPLE);
+    }
+
+    @Override
+    protected void dropCustomDeathLoot(DamageSource pSource, int pLooting, boolean pRecentlyHit) {
+        super.dropCustomDeathLoot(pSource, pLooting, pRecentlyHit);
+        
+        // Drop Essence of the Abyss with 100% chance
+        ItemStack essenceStack = new ItemStack(ModItems.ESSENCE_OF_THE_ABYSS.get(), 1);
+        this.spawnAtLocation(essenceStack);
     }
 
 } 
