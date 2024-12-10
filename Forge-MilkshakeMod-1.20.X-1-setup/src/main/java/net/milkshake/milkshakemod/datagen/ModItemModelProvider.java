@@ -104,6 +104,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BLAZING_EMBER);
         simpleItem(ModItems.HEART_OF_THE_FOREST);
         simpleItem(ModItems.STAR_OF_YULE);
+        simpleItem(ModItems.CROWN_OF_THE_KING);
 
     }
 

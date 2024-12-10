@@ -116,6 +116,9 @@ public static final RegistryObject<Item> RAW_LUNATEAN = ITEMS.register("raw_luna
     
     public static final RegistryObject<Item> LUNATEAN_PAXEL = ITEMS.register("lunatean_paxel",
         () -> new net.milkshake.milkshakemod.item.custom.LunateanPaxel(ModToolTiers.LUNATEAN, 5.0f));
+
+        public static final RegistryObject<Item> CROWN_OF_THE_KING = ITEMS.register("crown_of_the_king",
+        () -> new Item(new Item.Properties()));
     
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

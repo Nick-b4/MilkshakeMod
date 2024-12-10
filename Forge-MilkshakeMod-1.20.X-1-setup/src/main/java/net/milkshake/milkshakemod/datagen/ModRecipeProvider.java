@@ -86,6 +86,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             .unlockedBy(getHasName(Items.NETHER_STAR), has(Items.NETHER_STAR))
             .unlockedBy(getHasName(ModItems.ECHO_OF_OBLIVION.get()), has(ModItems.ECHO_OF_OBLIVION.get()))
             .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STAR_OF_YULE.get())
+            .pattern("FLH")
+            .pattern("LLL")
+            .pattern("SLE")
+            .define('F', ModItems.FRAGMENT_OF_SHADOWS.get())
+            .define('S', ModItems.BLAZING_EMBER.get())
+            .define('H', ModItems.HEART_OF_THE_FOREST.get())
+            .define('E', ModItems.ESSENCE_OF_THE_ABYSS.get())
+            .define('L', ModBlocks.LUNATEAN_BLOCK.get())
+            .unlockedBy("has_fragment_of_shadows", has(ModItems.FRAGMENT_OF_SHADOWS.get()))
+            .unlockedBy("has_blazing_ember", has(ModItems.BLAZING_EMBER.get()))
+            .unlockedBy("has_heart_of_forest", has(ModItems.HEART_OF_THE_FOREST.get()))
+            .unlockedBy("has_essence_of_abyss", has(ModItems.ESSENCE_OF_THE_ABYSS.get()))
+            .unlockedBy("has_lunatean_block", has(ModBlocks.LUNATEAN_BLOCK.get()))
+            .save(pWriter);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

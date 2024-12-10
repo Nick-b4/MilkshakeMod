@@ -83,6 +83,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.BLAZING_EMBER.get());
                         pOutput.accept(ModItems.HEART_OF_THE_FOREST.get());
                         pOutput.accept(ModItems.STAR_OF_YULE.get());
+                        pOutput.accept(ModItems.CROWN_OF_THE_KING.get());
                     })
                     .build());
 
