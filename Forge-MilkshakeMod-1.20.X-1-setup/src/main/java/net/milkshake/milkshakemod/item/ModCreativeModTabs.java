@@ -84,6 +84,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.HEART_OF_THE_FOREST.get());
                         pOutput.accept(ModItems.STAR_OF_YULE.get());
                         pOutput.accept(ModItems.CROWN_OF_THE_KING.get());
+                        pOutput.accept(ModBlocks.CURSED_ICE_PEDESTAL.get());
+                        pOutput.accept(ModBlocks.FESTIVE_SPIRE.get());
                     })
                     .build());
 

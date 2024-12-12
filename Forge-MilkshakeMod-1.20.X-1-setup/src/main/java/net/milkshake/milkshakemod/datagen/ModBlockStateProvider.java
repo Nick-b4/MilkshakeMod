@@ -98,6 +98,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.CHALICE_OF_VOID.get(), chaliceMode4);
         simpleBlockItem(ModBlocks.CHALICE_OF_VOID.get(), chaliceMode4);
 
+        ModelFile cursedIcePedestal = models().getExistingFile(modLoc("block/cursed_ice_pedestal"));
+        simpleBlock(ModBlocks.CURSED_ICE_PEDESTAL.get(), cursedIcePedestal);
+        simpleBlockItem(ModBlocks.CURSED_ICE_PEDESTAL.get(), cursedIcePedestal);
+
+        ModelFile festiveSpire = models().getExistingFile(modLoc("block/festive_spire"));
+        simpleBlock(ModBlocks.FESTIVE_SPIRE.get(), festiveSpire);
+        simpleBlockItem(ModBlocks.FESTIVE_SPIRE.get(), festiveSpire);
+
         saplingBlock(ModBlocks.LUNATEAN_SAPLING);
     }
 

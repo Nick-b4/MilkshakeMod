@@ -61,6 +61,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CHALICE_OF_VOID.get());
         this.dropSelf(ModBlocks.LUNATEAN_SAPLING.get());
         this.dropSelf(ModBlocks.ANCIENT_WOOD_LOG.get());
+        this.dropSelf(ModBlocks.CURSED_ICE_PEDESTAL.get());
+        this.dropSelf(ModBlocks.FESTIVE_SPIRE.get());
         this.add(ModBlocks.LUNATEAN_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.LUNATEAN_SLAB.get()));
         this.add(ModBlocks.LUNATEAN_DOOR.get(),

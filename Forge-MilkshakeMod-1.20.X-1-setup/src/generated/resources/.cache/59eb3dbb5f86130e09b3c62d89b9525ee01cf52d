@@ -1,11 +1,13 @@
-// 1.20.1	2024-12-06T22:52:44.9074792	Loot Tables
+// 1.20.1	2024-12-10T22:21:12.0557617	Loot Tables
 3bd345351f574a660c610769cc018a47a0df0a64 data/milkshakemod/loot_tables/blocks/ancient_wood_log.json
 d2c5bbbf495b945262dd870351085bc8e14ebbd9 data/milkshakemod/loot_tables/blocks/chalice_of_deception.json
 1c59a2f2dd40e89b1bbf5ae23c090567fb21dce5 data/milkshakemod/loot_tables/blocks/chalice_of_eternal_flame.json
 0e8c1aedbddaaa1faa0d81aab7c4d63c5ad1c88e data/milkshakemod/loot_tables/blocks/chalice_of_nature.json
 7007938fe0c1cf777a4c7685b9a8f246135ec650 data/milkshakemod/loot_tables/blocks/chalice_of_void.json
+ca488c7d804add14b61692b9fb164dac5de65a64 data/milkshakemod/loot_tables/blocks/cursed_ice_pedestal.json
 4251b003a3c2e9c7d63eea41648df781f7a3c76e data/milkshakemod/loot_tables/blocks/deepslate_lunatean_ore.json
 eb8274490ca214c1c6eb6b2da0d7f514f100747a data/milkshakemod/loot_tables/blocks/end_stone_lunatean_ore.json
+22a9f479bead180ee14676be587eba7fe57c64c0 data/milkshakemod/loot_tables/blocks/festive_spire.json
 00d258d19619e21553ec2446b8724833d98b3e52 data/milkshakemod/loot_tables/blocks/lunatean_block.json
 bdf907a85624a992d45d18e4c0956dca1bfe096e data/milkshakemod/loot_tables/blocks/lunatean_button.json
 9a47221f934cb24f371edbc826d11c77bbcf5ea9 data/milkshakemod/loot_tables/blocks/lunatean_crop.json

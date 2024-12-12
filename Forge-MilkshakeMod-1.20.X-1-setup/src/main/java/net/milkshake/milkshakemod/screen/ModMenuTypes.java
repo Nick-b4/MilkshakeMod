@@ -27,6 +27,12 @@ public class ModMenuTypes {
     public static final RegistryObject<MenuType<ChaliceOfNatureMenu>> CHALICE_OF_NATURE_MENU =
             registerMenuType("chalice_of_nature_menu", ChaliceOfNatureMenu::new);
 
+    public static final RegistryObject<MenuType<CursedIcePedestalMenu>> CURSED_ICE_PEDESTAL_MENU =
+            registerMenuType("cursed_ice_pedestal_menu", CursedIcePedestalMenu::new);
+
+    public static final RegistryObject<MenuType<FestiveSpireMenu>> FESTIVE_SPIRE_MENU =
+            registerMenuType("festive_spire_menu", FestiveSpireMenu::new);
+
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(String name, IContainerFactory<T> factory) {
         return MENUS.register(name, () -> IForgeMenuType.create(factory));
     }

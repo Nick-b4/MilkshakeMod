@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": {
+      "item": "milkshakemod:lunatean"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "L L",
+    "L L"
+  ],
+  "result": {
+    "item": "milkshakemod:lunatean_leggings"
+  },
+  "show_notification": true
+}

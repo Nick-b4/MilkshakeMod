@@ -145,6 +145,6 @@ public class FrostFallenKingEntity extends Monster {
         super.dropCustomDeathLoot(pSource, pLooting, pRecentlyHit);
         
         // Drop Star of Yule with 100% chance
-        this.spawnAtLocation(ModItems.CROWN_OF_THE_KING.get());
+        this.spawnAtLocation(ModItems.STAR_OF_YULE.get());
     }
 }

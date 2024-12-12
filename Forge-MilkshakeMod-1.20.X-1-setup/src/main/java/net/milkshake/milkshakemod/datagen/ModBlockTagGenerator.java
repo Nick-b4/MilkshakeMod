@@ -40,7 +40,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
             .add(ModBlocks.CHALICE_OF_DECEPTION.get())
             .add(ModBlocks.CHALICE_OF_ETERNAL_FLAME.get())
             .add(ModBlocks.CHALICE_OF_NATURE.get())
-            .add(ModBlocks.CHALICE_OF_VOID.get());
+            .add(ModBlocks.CHALICE_OF_VOID.get())
+            .add(ModBlocks.CURSED_ICE_PEDESTAL.get());
 
         this.tag(BlockTags.LOGS)
             .add(ModBlocks.LUNATEAN_LOG.get())

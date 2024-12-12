@@ -38,6 +38,8 @@ import net.milkshake.milkshakemod.block.custom.ChaliceOfDeceptionBlock;
 import net.milkshake.milkshakemod.block.custom.ChaliceOfEternalFlameBlock;
 import net.milkshake.milkshakemod.block.custom.ChaliceOfNatureBlock;
 import net.milkshake.milkshakemod.block.custom.ChaliceOfVoidBlock;
+import net.milkshake.milkshakemod.block.custom.CursedIcePedestalBlock;
+import net.milkshake.milkshakemod.block.custom.FestiveSpireBlock;
 import net.milkshake.milkshakemod.block.custom.LunateanCropBlock;
 import net.milkshake.milkshakemod.sound.ModSounds;
 import net.milkshake.milkshakemod.worldgen.tree.LunateanTreeGrower;
@@ -155,6 +157,12 @@ public class ModBlocks {
             () -> new ChaliceOfNatureBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()));
     public static final RegistryObject<Block> CHALICE_OF_VOID = registerBlock("chalice_of_void",
             () -> new ChaliceOfVoidBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()));
+
+    public static final RegistryObject<Block> CURSED_ICE_PEDESTAL = registerBlock("cursed_ice_pedestal",
+            () -> new CursedIcePedestalBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()));
+
+    public static final RegistryObject<Block> FESTIVE_SPIRE = registerBlock("festive_spire",
+            () -> new FestiveSpireBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()));
 
              public static final RegistryObject<Block> LUNATEAN_SAPLING = registerBlock("lunatean_sapling",
             () -> new SaplingBlock(new LunateanTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));

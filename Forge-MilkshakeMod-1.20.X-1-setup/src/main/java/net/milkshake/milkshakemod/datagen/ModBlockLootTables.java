@@ -54,6 +54,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.CHALICE_OF_ETERNAL_FLAME.get()); 
         dropSelf(ModBlocks.CHALICE_OF_VOID.get());
         dropSelf(ModBlocks.CHALICE_OF_NATURE.get());
+        dropSelf(ModBlocks.CURSED_ICE_PEDESTAL.get());
+        dropSelf(ModBlocks.FESTIVE_SPIRE.get());
 
         LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.LUNATEAN_CROP.get())

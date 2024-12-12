@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "milkshakemod:essence_of_the_abyss"
+    },
+    "F": {
+      "item": "milkshakemod:fragment_of_shadows"
+    },
+    "H": {
+      "item": "milkshakemod:heart_of_the_forest"
+    },
+    "L": {
+      "item": "milkshakemod:lunatean_block"
+    },
+    "S": {
+      "item": "milkshakemod:blazing_ember"
+    }
+  },
+  "pattern": [
+    "FLH",
+    "LLL",
+    "SLE"
+  ],
+  "result": {
+    "item": "milkshakemod:crown_of_the_king"
+  },
+  "show_notification": true
+}

@@ -1,7 +1,7 @@
 package net.milkshake.milkshakemod.screen;
 
 import net.milkshake.milkshakemod.block.ModBlocks;
-import net.milkshake.milkshakemod.block.entity.ChaliceOfDeceptionBlockEntity;
+import net.milkshake.milkshakemod.block.entity.FestiveSpireBlockEntity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -12,8 +12,8 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
 
-public class ChaliceOfDeceptionMenu extends AbstractContainerMenu {
-    public final ChaliceOfDeceptionBlockEntity blockEntity;         
+public class FestiveSpireMenu extends AbstractContainerMenu {  
+    public final FestiveSpireBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
 
@@ -24,16 +24,16 @@ public class ChaliceOfDeceptionMenu extends AbstractContainerMenu {
     private static final int VANILLA_SLOT_COUNT = HOTBAR_SLOT_COUNT + PLAYER_INVENTORY_SLOT_COUNT;
     private static final int VANILLA_FIRST_SLOT_INDEX = 0;
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
-    private static final int TE_INVENTORY_SLOT_COUNT = 4;
+    private static final int TE_INVENTORY_SLOT_COUNT = 1;
 
-    public ChaliceOfDeceptionMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
-        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(4));   
+    public FestiveSpireMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
+        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
     }
 
-    public ChaliceOfDeceptionMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
-        super(ModMenuTypes.CHALICE_OF_DECEPTION_MENU.get(), pContainerId);
-        checkContainerSize(((ChaliceOfDeceptionBlockEntity) entity).getInventory(), 4);
-        blockEntity = ((ChaliceOfDeceptionBlockEntity) entity);
+    public FestiveSpireMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
+        super(ModMenuTypes.FESTIVE_SPIRE_MENU.get(), pContainerId);
+        checkContainerSize(((FestiveSpireBlockEntity) entity).getInventory(), 1);
+        blockEntity = ((FestiveSpireBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
 
@@ -41,10 +41,7 @@ public class ChaliceOfDeceptionMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 43, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 115, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 44, 90));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 116, 90));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 80, 63));
         });
 
         addDataSlots(data);
@@ -86,7 +83,7 @@ public class ChaliceOfDeceptionMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, ModBlocks.CHALICE_OF_DECEPTION.get());
+                pPlayer, ModBlocks.FESTIVE_SPIRE.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

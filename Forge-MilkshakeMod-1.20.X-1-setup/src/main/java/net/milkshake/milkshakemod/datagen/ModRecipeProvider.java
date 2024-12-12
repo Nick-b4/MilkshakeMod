@@ -87,7 +87,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             .unlockedBy(getHasName(ModItems.ECHO_OF_OBLIVION.get()), has(ModItems.ECHO_OF_OBLIVION.get()))
             .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STAR_OF_YULE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CROWN_OF_THE_KING.get())
             .pattern("FLH")
             .pattern("LLL")
             .pattern("SLE")
@@ -101,6 +101,85 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             .unlockedBy("has_heart_of_forest", has(ModItems.HEART_OF_THE_FOREST.get()))
             .unlockedBy("has_essence_of_abyss", has(ModItems.ESSENCE_OF_THE_ABYSS.get()))
             .unlockedBy("has_lunatean_block", has(ModBlocks.LUNATEAN_BLOCK.get()))
+            .save(pWriter);
+
+        // Lunatean Tools Recipes
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.LUNATEAN_SWORD.get())
+            .pattern(" L ")
+            .pattern(" L ")
+            .pattern(" S ")
+            .define('L', ModItems.LUNATEAN.get())
+            .define('S', Items.STICK)
+            .unlockedBy(getHasName(ModItems.LUNATEAN.get()), has(ModItems.LUNATEAN.get()))
+            .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.LUNATEAN_PICKAXE.get())
+            .pattern("LLL")
+            .pattern(" S ")
+            .pattern(" S ")
+            .define('L', ModItems.LUNATEAN.get())
+            .define('S', Items.STICK)
+            .unlockedBy(getHasName(ModItems.LUNATEAN.get()), has(ModItems.LUNATEAN.get()))
+            .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.LUNATEAN_AXE.get())
+            .pattern("LL ")
+            .pattern("LS ")
+            .pattern(" S ")
+            .define('L', ModItems.LUNATEAN.get())
+            .define('S', Items.STICK)
+            .unlockedBy(getHasName(ModItems.LUNATEAN.get()), has(ModItems.LUNATEAN.get()))
+            .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.LUNATEAN_SHOVEL.get())
+            .pattern(" L ")
+            .pattern(" S ")
+            .pattern(" S ")
+            .define('L', ModItems.LUNATEAN.get())
+            .define('S', Items.STICK)
+            .unlockedBy(getHasName(ModItems.LUNATEAN.get()), has(ModItems.LUNATEAN.get()))
+            .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.LUNATEAN_HOE.get())
+            .pattern("LL ")
+            .pattern(" S ")
+            .pattern(" S ")
+            .define('L', ModItems.LUNATEAN.get())
+            .define('S', Items.STICK)
+            .unlockedBy(getHasName(ModItems.LUNATEAN.get()), has(ModItems.LUNATEAN.get()))
+            .save(pWriter);
+
+        // Lunatean Armor Recipes
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.LUNATEAN_HELMET.get())
+            .pattern("LLL")
+            .pattern("L L")
+            .pattern("   ")
+            .define('L', ModItems.LUNATEAN.get())
+            .unlockedBy(getHasName(ModItems.LUNATEAN.get()), has(ModItems.LUNATEAN.get()))
+            .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.LUNATEAN_CHESTPLATE.get())
+            .pattern("L L")
+            .pattern("LLL")
+            .pattern("LLL")
+            .define('L', ModItems.LUNATEAN.get())
+            .unlockedBy(getHasName(ModItems.LUNATEAN.get()), has(ModItems.LUNATEAN.get()))
+            .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.LUNATEAN_LEGGINGS.get())
+            .pattern("LLL")
+            .pattern("L L")
+            .pattern("L L")
+            .define('L', ModItems.LUNATEAN.get())
+            .unlockedBy(getHasName(ModItems.LUNATEAN.get()), has(ModItems.LUNATEAN.get()))
+            .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.LUNATEAN_BOOTS.get())
+            .pattern("   ")
+            .pattern("L L")
+            .pattern("L L")
+            .define('L', ModItems.LUNATEAN.get())
+            .unlockedBy(getHasName(ModItems.LUNATEAN.get()), has(ModItems.LUNATEAN.get()))
             .save(pWriter);
     }
 

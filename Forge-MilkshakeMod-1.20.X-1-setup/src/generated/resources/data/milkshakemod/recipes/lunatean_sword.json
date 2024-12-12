@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": {
+      "item": "milkshakemod:lunatean"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " L ",
+    " L ",
+    " S "
+  ],
+  "result": {
+    "item": "milkshakemod:lunatean_sword"
+  },
+  "show_notification": true
+}

@@ -10,6 +10,8 @@ import net.milkshake.milkshakemod.screen.ChaliceOfDeceptionScreen;
 import net.milkshake.milkshakemod.screen.ChaliceOfEternalFlameScreen;
 import net.milkshake.milkshakemod.screen.ChaliceOfNatureScreen;
 import net.milkshake.milkshakemod.screen.ChaliceOfVoidScreen;
+import net.milkshake.milkshakemod.screen.CursedIcePedestalScreen;
+import net.milkshake.milkshakemod.screen.FestiveSpireScreen;
 import net.milkshake.milkshakemod.screen.ModMenuTypes;
 import net.milkshake.milkshakemod.villager.ModVillagers;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -107,6 +109,8 @@ public class MilkshakeMod {
                 MenuScreens.register(ModMenuTypes.CHALICE_OF_ETERNAL_FLAME_MENU.get(), ChaliceOfEternalFlameScreen::new);
                 MenuScreens.register(ModMenuTypes.CHALICE_OF_NATURE_MENU.get(), ChaliceOfNatureScreen::new);
                 MenuScreens.register(ModMenuTypes.CHALICE_OF_VOID_MENU.get(), ChaliceOfVoidScreen::new);
+                MenuScreens.register(ModMenuTypes.CURSED_ICE_PEDESTAL_MENU.get(), CursedIcePedestalScreen::new);
+                MenuScreens.register(ModMenuTypes.FESTIVE_SPIRE_MENU.get(), FestiveSpireScreen::new);
             });
         }
 

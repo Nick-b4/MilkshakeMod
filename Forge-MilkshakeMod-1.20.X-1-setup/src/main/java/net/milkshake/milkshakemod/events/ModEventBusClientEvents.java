@@ -1,6 +1,7 @@
 package net.milkshake.milkshakemod.events;
 
 import net.milkshake.milkshakemod.MilkshakeMod;
+import net.milkshake.milkshakemod.block.entity.ModBlockEntities;
 import net.milkshake.milkshakemod.entity.ModEntities;
 import net.milkshake.milkshakemod.entity.client.*;
 import net.minecraftforge.api.distmarker.Dist;

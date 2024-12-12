@@ -1,0 +1,87 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blazing_ember": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "milkshakemod:blazing_ember"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_essence_of_abyss": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "milkshakemod:essence_of_the_abyss"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_fragment_of_shadows": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "milkshakemod:fragment_of_shadows"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_heart_of_forest": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "milkshakemod:heart_of_the_forest"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_lunatean_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "milkshakemod:lunatean_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "milkshakemod:crown_of_the_king"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_fragment_of_shadows",
+      "has_blazing_ember",
+      "has_heart_of_forest",
+      "has_essence_of_abyss",
+      "has_lunatean_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "milkshakemod:crown_of_the_king"
+    ]
+  },
+  "sends_telemetry_event": false
+}

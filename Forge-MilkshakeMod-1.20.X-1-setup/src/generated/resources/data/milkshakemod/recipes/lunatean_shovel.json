@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": {
+      "item": "milkshakemod:lunatean"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " L ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "milkshakemod:lunatean_shovel"
+  },
+  "show_notification": true
+}
