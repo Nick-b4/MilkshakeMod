@@ -51,6 +51,13 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                                 new LootTableIdCondition.Builder(new ResourceLocation("minecraft:entities/blaze")).build() }, 
                         ModItems.INFERNAL_CORE.get()));                                
         
+        add("lunateanoal_from_stronghold", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("minecraft:chests/stronghold_corridor")).build() },
+                ModItems.LUNATEANOAL.get()));
+
+        add("lunateanoal_from_end_city", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("minecraft:chests/end_city_treasure")).build() },
+                ModItems.LUNATEANOAL.get()));
 
 
 

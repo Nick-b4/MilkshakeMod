@@ -2,6 +2,7 @@
   "entries": [
     "milkshakemod:stone_tablet_from_woodland_mansion",
     "milkshakemod:infernal_core_from_blaze",
+    "milkshakemod:lunateanoal_from_stronghold",
     "milkshakemod:metal_detector_from_jungle_temples",
     "milkshakemod:ender_heart_from_endermite",
     "milkshakemod:ember_of_eternity_from_wither",
@@ -9,7 +10,8 @@
     "milkshakemod:root_of_renewal_from_spore_blossom",
     "milkshakemod:lunatean_from_ender_dragon",
     "milkshakemod:soulfire_crystal_from_soul_bender",
-    "milkshakemod:essence_of_the_bloom_from_bee"
+    "milkshakemod:essence_of_the_bloom_from_bee",
+    "milkshakemod:lunateanoal_from_end_city"
   ],
   "replace": false
 }

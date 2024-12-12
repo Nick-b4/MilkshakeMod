@@ -18,6 +18,7 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.milkshake.milkshakemod.item.ModItems;
+import net.minecraft.core.particles.ParticleTypes;
 import org.jetbrains.annotations.Nullable;
 
 public class FrostFallenKingEntity extends Monster {
@@ -41,6 +42,29 @@ public class FrostFallenKingEntity extends Monster {
 
         if(this.level().isClientSide()) {
             setupAnimationStates();
+        }
+
+        Level level = this.level();
+        if (level.isClientSide) {  // Only spawn particles on client side
+            double x = this.getX();
+            double y = this.getY();
+            double z = this.getZ();
+            
+            // Create a snow effect in a 5 block radius
+            for (int i = 0; i < 5; i++) {
+                double offsetX = this.random.nextDouble() * 10 - 5; // Random position in -5 to 5 range
+                double offsetZ = this.random.nextDouble() * 10 - 5;
+                
+                level.addParticle(
+                    ParticleTypes.SNOWFLAKE,
+                    x + offsetX,  // X position
+                    y + 3,        // Y position (3 blocks above entity)
+                    z + offsetZ,  // Z position
+                    0,            // X velocity
+                    -0.1,         // Y velocity (falling snow)
+                    0             // Z velocity
+                );
+            }
         }
     }
 
