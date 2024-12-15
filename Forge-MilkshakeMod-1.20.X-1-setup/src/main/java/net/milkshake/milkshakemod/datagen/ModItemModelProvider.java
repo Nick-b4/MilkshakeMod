@@ -71,12 +71,12 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         trapdoorItem(ModBlocks.LUNATEAN_TRAPDOOR);
 
-        handheldItem(ModItems.LUNATEAN_SWORD);
         handheldItem(ModItems.LUNATEAN_PICKAXE);
         handheldItem(ModItems.LUNATEAN_AXE);
         handheldItem(ModItems.LUNATEAN_SHOVEL);
         handheldItem(ModItems.LUNATEAN_HOE);
         handheldItem(ModItems.LUNATEAN_PAXEL);
+        handheldItem(ModItems.LUNATEAN_SWORD);
 
         trimmedArmorItem(ModItems.LUNATEAN_HELMET);
         trimmedArmorItem(ModItems.LUNATEAN_CHESTPLATE);

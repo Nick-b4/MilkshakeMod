@@ -10,8 +10,8 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    LUNATEAN("lunatean", 33333, new int[]{ 25, 27, 25, 24 }, 30,
-            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.LUNATEAN.get()));
+    LUNATEAN("lunatean", 33333, new int[]{ 45, 47, 45, 44 }, 30,
+            SoundEvents.ARMOR_EQUIP_GOLD, 10f, 10f, () -> Ingredient.of(ModItems.LUNATEAN.get()));
 
     private final String name;
     private final int durabilityMultiplier;

@@ -40,7 +40,7 @@ public class ItachiShadowCloneEntity extends Monster {
                 .add(Attributes.MAX_HEALTH, 50.0D)
                 .add(Attributes.FOLLOW_RANGE, 32D)
                 .add(Attributes.MOVEMENT_SPEED, 0.3D)
-                .add(Attributes.ATTACK_DAMAGE, 5.0D)
+                .add(Attributes.ATTACK_DAMAGE, 15.0D)
                 .add(Attributes.ATTACK_SPEED, 1.5D);
     }
 

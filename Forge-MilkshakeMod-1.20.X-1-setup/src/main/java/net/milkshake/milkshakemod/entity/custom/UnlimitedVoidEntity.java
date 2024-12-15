@@ -90,9 +90,9 @@ public class UnlimitedVoidEntity extends Monster {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
-                .add(Attributes.MAX_HEALTH, 5000.0D)
+                .add(Attributes.MAX_HEALTH, 25000.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.8D)
-                .add(Attributes.ATTACK_DAMAGE, 15.0D)
+                .add(Attributes.ATTACK_DAMAGE, 95.0D)
                 .add(Attributes.KNOCKBACK_RESISTANCE, 0.6D)
                 .add(Attributes.ATTACK_KNOCKBACK, 1.0D);
     }

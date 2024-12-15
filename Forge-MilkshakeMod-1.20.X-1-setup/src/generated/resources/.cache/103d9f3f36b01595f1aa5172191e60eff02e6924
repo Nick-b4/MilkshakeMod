@@ -1,8 +1,10 @@
-// 1.20.1	2024-12-05T17:03:00.902201	Registries
+// 1.20.1	2024-12-15T12:03:32.6715973	Registries
 5093bfbe97d5d15f159772f01c1f87dd48dd3c4e data/milkshakemod/forge/biome_modifier/add_end_lunatean_ore.json
 f5a342f9f7333aab0031d3cf654d0f0dbf0d1d61 data/milkshakemod/forge/biome_modifier/add_lunatean_ore.json
 074c57cc8be04202efd49bb96d1ccedcf50f0f9e data/milkshakemod/forge/biome_modifier/add_nether_lunatean_ore.json
 f5adad96f5bcdb7f309648af52b911ada721720e data/milkshakemod/forge/biome_modifier/add_tree_lunatean.json
+42a7c6d48cd8f3268efe4fcac5226ee9546e9134 data/milkshakemod/forge/biome_modifier/spawn_soul_bender.json
+7de5f83e24d9e5f42cd5c6d5a547c222a957cef8 data/milkshakemod/forge/biome_modifier/spawn_void_mage.json
 1c514f7704379068022f187ef27c1539099c457f data/milkshakemod/worldgen/configured_feature/end_lunatean_ore.json
 450f30b269fb6fa75c118518d736f1c03d157546 data/milkshakemod/worldgen/configured_feature/lunatean.json
 d1493ff44dbcea32bee98b8acc87fa8495baac2d data/milkshakemod/worldgen/configured_feature/lunatean_ore.json

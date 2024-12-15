@@ -107,12 +107,12 @@ public class FrostFallenKingEntity extends Monster {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
-                .add(Attributes.MAX_HEALTH, 5000D)
+                .add(Attributes.MAX_HEALTH, 25000D)
                 .add(Attributes.FOLLOW_RANGE, 48D)
                 .add(Attributes.MOVEMENT_SPEED, 0.5D)
                 .add(Attributes.ARMOR_TOUGHNESS, 10f)
                 .add(Attributes.ATTACK_KNOCKBACK, 0.5f)
-                .add(Attributes.ATTACK_DAMAGE, 255f)
+                .add(Attributes.ATTACK_DAMAGE, 115f)
                 .add(Attributes.ATTACK_SPEED, 2.0D);
     }
 

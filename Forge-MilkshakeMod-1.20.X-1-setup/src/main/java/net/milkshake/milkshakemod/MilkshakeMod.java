@@ -32,6 +32,10 @@ import net.milkshake.milkshakemod.entity.ModEntities;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.milkshake.milkshakemod.block.entity.ModBlockEntities;
 import org.slf4j.Logger;
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.monster.Monster;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MilkshakeMod.Mod_ID)
@@ -61,9 +65,7 @@ public class MilkshakeMod {
         
         // Register creative tabs last
         ModCreativeModTabs.register(modEventBus);
-
         // Event registration
-        modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
         
         // Register event handlers
@@ -71,9 +73,8 @@ public class MilkshakeMod {
         modEventBus.register(ModEventBusEvents.class);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {
-
-    }
+    
+    
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
